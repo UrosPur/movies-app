@@ -1,6 +1,6 @@
 <template>
     <div>
-This is movies page
+        This is movies page
     </div>
 </template>
 
@@ -11,6 +11,26 @@ This is movies page
 
     export default {
         name: "AppMovies",
+
+        data() {
+
+            return {
+
+                movies: []
+
+            }
+        },
+
+        methods:
+            {
+                getAllMovies() {
+
+                    filmServices.getAll()
+                        .then
+
+                }
+            }
+
 
     }
 </script>
