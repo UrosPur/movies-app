@@ -6,10 +6,12 @@ This is movies page
 
 <script>
 
+    import {filmServices} from "../services/MoviesServices";
 
 
     export default {
-        name: "AppMovies"
+        name: "AppMovies",
+
     }
 </script>
 
