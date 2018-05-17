@@ -44,13 +44,12 @@
             </div>
             <div class="col-sm-5">
                 <h2>movie list</h2>
-                <b-list-group>
-                    <b-list-group-item>Cras justo odio</b-list-group-item>
-                    <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
-                    <b-list-group-item>Morbi leo risus</b-list-group-item>
-                    <b-list-group-item>Porta ac consectetur ac</b-list-group-item>
-                    <b-list-group-item>Vestibulum at eros</b-list-group-item>
-                </b-list-group>
+                <MovieRow
+                v-for="movie in movies"
+                :key="movie.id"
+                :movie="movie"
+
+                />
             </div>
 
         </div>
@@ -60,10 +59,15 @@
 <script>
 
     import {filmServices} from "../services/MoviesServices";
+    import MovieRow from "./MovieRow.vue";
 
 
     export default {
         name: "AppMovies",
+        components: {
+            MovieRow
+
+        },
 
         created() {
 
@@ -113,7 +117,6 @@
                 })
 
         }
-
 
     }
 </script>
