@@ -43,6 +43,8 @@
 
             </div>
             <div class="col-sm-5">
+                <h3>Search movies</h3>
+                <MovieSearch/>
                 <h2>movie list</h2>
                 <MovieRow
                 v-for="movie in movies"
@@ -60,12 +62,14 @@
 
     import {filmServices} from "../services/MoviesServices";
     import MovieRow from "./MovieRow.vue";
+    import MovieSearch from "./MovieSearch.vue"
 
 
     export default {
         name: "AppMovies",
         components: {
-            MovieRow
+            MovieRow,
+            MovieSearch
 
         },
 
