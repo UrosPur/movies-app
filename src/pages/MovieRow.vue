@@ -1,13 +1,28 @@
 <template>
     <div>
-        <b-list-group>
-            <b-list-group-item>{{ movie.id}}</b-list-group-item>
-            <b-list-group-item>{{ movie.title}}</b-list-group-item>
-            <b-list-group-item>{{ movie.director}}</b-list-group-item>
-            <b-list-group-item>{{ movie.imageUrl}}</b-list-group-item>
-            <b-list-group-item>{{ movie.releaseDate}}</b-list-group-item>
-            <b-list-group-item>{{ movie.genre}}</b-list-group-item>
-        </b-list-group>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">movie id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Director</th>
+                <th scope="col">image Url</th>
+                <th scope="col">release date</th>
+                <th scope="col">genre</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <th scope="row">{{ movie.id}}</th>
+                <td>{{ movie.title}}</td>
+                <td>{{ movie.director}}</td>
+                <td>{{ movie.imageUrl}}</td>
+                <td>{{ movie.releaseDate}}</td>
+                <td>{{ movie.genre}}</td>
+            </tr>
+            </tbody>
+        </table>
 
     </div>
 </template>

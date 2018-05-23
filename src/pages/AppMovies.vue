@@ -1,7 +1,6 @@
 <template>
     <div>
         <div class="row">
-            <div class="col-sm-7">
                 <h2>add movie</h2>
 
 
@@ -40,8 +39,8 @@
                     <b-button type="submit" variant="primary">Submit</b-button>
 
                 </b-form>
-
-            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-5">
                 <h3>Search movies</h3>
                 <MovieSearch/>
