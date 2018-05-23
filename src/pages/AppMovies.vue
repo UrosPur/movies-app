@@ -3,6 +3,10 @@
         <div class="row">
                 <h2>add movie</h2>
 
+            <movie-search
+                    @search-term-change="onSearchTermChanged"
+                    class="mt-4"
+            />
 
                 <b-form @submit="addMovie">
 
