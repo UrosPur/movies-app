@@ -5,6 +5,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import AppMovies from './pages/AppMovies'
+import AddMovie from './pages/AddMovie'
 import BootstrapVue from 'bootstrap-vue'
 
 
@@ -18,7 +19,8 @@ Vue.use(BootstrapVue)
 const routes = [
 
     { path:'/',redirect:'/movies'},
-    { path:'/movies', component: AppMovies, name:'movies'}
+    { path:'/movies', component: AppMovies, name:'movies'},
+    { path:'/add-movie', component: AddMovie, name:'add-movie'}
 
 ]
 
